@@ -40,6 +40,7 @@ t.test('counters', async t => {
 	const integration = new IntegrationInstanceBase(path.resolve('instances'), {counter1, counter2});
 	integration.on('status', status => statuses.push(status));
 	t.same(integration.instances, ['counter1', 'counter2']);
+	t.equal(integration.defaultInstance, counter1);
 	t.equal(integration.counter1, counter1);
 	t.equal(integration.counter2, counter2);
 	t.equal(integration.startedMessage, 'Started daemons');

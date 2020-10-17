@@ -12,6 +12,10 @@ export class IntegrationInstanceBase extends EventEmitter {
 		return Object.keys(this.#instances);
 	}
 
+	get defaultInstance() {
+		return this[this.instances[0]];
+	}
+
 	get startedMessage() {
 		return 'Started daemons';
 	}
