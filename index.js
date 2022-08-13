@@ -1,5 +1,5 @@
-import fs from 'fs/promises';
-import EventEmitter from 'events';
+import fs from 'node:fs/promises';
+import EventEmitter from 'node:events';
 
 import pMap from 'p-map';
 
@@ -33,7 +33,7 @@ export class IntegrationInstanceBase extends EventEmitter {
 	}
 
 	async build() {
-		await fs.rmdir(this.#instancesPath, {recursive: true});
+		await fs.rm(this.#instancesPath, {recursive: true, force: true});
 		this.emit('status', 'Building daemons');
 		await pMap(
 			Object.values(this.#instances),
