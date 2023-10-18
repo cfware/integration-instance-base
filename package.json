@@ -1,6 +1,6 @@
 {
     "name": "@cfware/integration-instance-base",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "description": "Integration Instance Base",
     "type": "module",
     "main": "index.js",

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/cfware/integration-instance-base/compare/v0.1.2...v1.0.0) (2023-10-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update dependencies
+
+### Features
+
+* Update dependencies ([6787a9e](https://github.com/cfware/integration-instance-base/commit/6787a9e708cbb35ac56a7b40f9995a1819b51b39))
+
 ### [0.1.2](https://github.com/cfware/integration-instance-base/compare/v0.1.1...v0.1.2) (2022-08-13)
 
 
