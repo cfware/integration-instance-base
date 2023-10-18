@@ -1,37 +1,37 @@
 {
-	"name": "@cfware/integration-instance-base",
-	"version": "0.1.2",
-	"description": "Integration Instance Base",
-	"type": "module",
-	"main": "index.js",
-	"exports": "./index.js",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --check-coverage"
-	},
-	"engines": {
-		"node": ">=16.12.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/integration-instance-base.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/integration-instance-base/issues"
-	},
-	"homepage": "https://github.com/cfware/integration-instance-base#readme",
-	"dependencies": {
-		"p-map": "^5.5.0"
-	},
-	"devDependencies": {
-		"@cfware/lint": "^3.0.4",
-		"@cfware/nyc": "^0.7.1",
-		"@istanbuljs/esm-loader-hook": "^0.2.0",
-		"libtap": "^1.4.0",
-		"nyc": "^15.1.0"
-	}
+    "name": "@cfware/integration-instance-base",
+    "version": "0.1.2",
+    "description": "Integration Instance Base",
+    "type": "module",
+    "main": "index.js",
+    "exports": "./index.js",
+    "scripts": {
+        "pretest": "cfware-lint .",
+        "tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
+        "test": "npm run -s tests-only",
+        "posttest": "nyc report --check-coverage"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": "Corey Farrell",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cfware/integration-instance-base.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cfware/integration-instance-base/issues"
+    },
+    "homepage": "https://github.com/cfware/integration-instance-base#readme",
+    "dependencies": {
+        "p-map": "^6"
+    },
+    "devDependencies": {
+        "@cfware/lint": "^4",
+        "@cfware/nyc": "^1",
+        "@istanbuljs/esm-loader-hook": "^0.2",
+        "libtap": "^1",
+        "nyc": "^15"
+    }
 }
